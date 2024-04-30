@@ -1,0 +1,10 @@
+{
+    "id": 7,
+    "activityName": "Kolo spinning",
+    "whatWeNeed": "Stacionární kolo, ručník, pití",
+    "describe": "Spinning je intenzivní cvičení na stacionárním kole, které se obvykle provádí ve skupinových lekcích. Instruktor vás bude vést přes různé úrovně intenzity a různé pozice, abyste spálili co nejvíce kalorií. Je to skvělá aktivita pro zlepšení kondice a spalování tuků.",
+    "burnedCalories": {
+      "low": 500,
+      "high": 700
+    }
+  }

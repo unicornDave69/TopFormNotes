@@ -1,0 +1,18 @@
+{
+    "id": 2,
+    "receiptName": "Quinoa salát s pečenou dýní a feta sýrem",
+    "ingredients": [
+      "150 g quinoa",
+      "400 g dýně (na kostičky)",
+      "100 g feta sýra (na drobné kousky)",
+      "2 PL olivového oleje",
+      "1 PL balzamikového octa",
+      "čerstvá máta (na ozdobu)",
+      "sůl a pepř"
+    ],
+    "procedure": [
+      "Quinoa uvaříme podle návodu na obalu.",
+      "Dýni marinujeme v olivovém oleji, balzamikovém octu, soli a pepři a pečeme v troubě při 200°C asi 20 minut, dokud není měkká.",
+      "Hotovou quinou smícháme s pečenou dýní a feta sýrem, ozdobíme čerstvou mátou."
+    ]
+  }

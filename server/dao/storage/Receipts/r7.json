@@ -1,0 +1,19 @@
+{
+    "id": 7,
+    "receiptName": "Krevetové saláty s mango a avokádem",
+    "ingredients": [
+      "200 g krevet",
+      "1 mango (na kostičky)",
+      "1 avokádo (na kostičky)",
+      "čerstvá koriandr (na ozdobu)",
+      "2 PL olivového oleje",
+      "1 PL balzamikového octa",
+      "sůl a pepř"
+    ],
+    "procedure": [
+      "Krevety osolíme a opepříme a osmažíme na pánvi na olivovém oleji dozlatova.",
+      "Mango a avokádo nakrájíme na menší kousky.",
+      "V misce smícháme krevety, mango a avokádo, přidáme balzamikový ocet a promícháme.",
+      "Salát podáváme ozdobený čerstvým koriandrem."
+    ]
+  }

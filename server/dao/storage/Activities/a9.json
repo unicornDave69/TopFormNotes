@@ -1,0 +1,10 @@
+{
+    "id": 9,
+    "activityName": "Kruhový trénink",
+    "whatWeNeed": "Posilovací vybavení, intervalový časovač",
+    "describe": "Kruhový trénink zahrnuje kombinaci cvičení s vlastní vahou těla a posilovacích cvičení s intervalovými cvičeními, které se střídají v krátkých časových intervalech. Tento tréninkový formát můžete provádět ve fitness centrech nebo doma s minimálním vybavením. Kruhový trénink je skvělý způsob, jak spálit kalorie, posílit svaly a zlepšit kondici.",
+    "burnedCalories": {
+      "low": 400,
+      "high": 700
+    }
+  }

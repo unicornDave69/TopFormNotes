@@ -1,0 +1,19 @@
+{
+    "id": 10,
+    "receiptName": "Rybí filé na zeleninovém lůžku se sojovým dresinkem",
+    "ingredients": [
+      "2 filety ryby (např. losos, treska)",
+      "400 g smíšené zeleniny (např. cuketa, mrkev, cibule)",
+      "2 PL sójové omáčky",
+      "2 PL olivového oleje",
+      "1 PL medu",
+      "1 PL octa",
+      "sůl a pepř"
+    ],
+    "procedure": [
+      "Zeleninu nakrájíme na menší kousky.",
+      "Na plech s pečícím papírem položíme rybí filety a okolo nich rovnoměrně rozložíme zeleninu.",
+      "Sójovou omáčku smícháme s olivovým olejem, medem, octem, solí a pepřem a polijeme zeleninu.",
+      "Rybí filé pečeme v troubě při 180°C asi 20 minut, dokud není ryba propečená a zelenina měkká."
+    ]
+  }

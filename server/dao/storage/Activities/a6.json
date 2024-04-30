@@ -1,0 +1,10 @@
+{
+    "id": 6,
+    "activityName": "Jogging",
+    "whatWeNeed": "Bežecké boty, pohodlné oblečení",
+    "describe": "Jogging je podobné běhání, ale obvykle se provádí v nižší intenzitě a s kratšími kroky. Může být vykonáváno venku nebo na běžeckém pásu. Je to skvělý způsob, jak spalovat kalorie a zlepšovat kardiovaskulární kondici.",
+    "burnedCalories": {
+      "low": 400,
+      "high": 600
+    }
+  }

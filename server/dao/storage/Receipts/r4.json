@@ -1,0 +1,17 @@
+{
+    "id": 4,
+    "receiptName": "Quinoa s čerstvými bylinkami a pečenou zeleninou",
+    "ingredients": [
+      "200 g quinoa",
+      "400 g smíšené zeleniny (např. cuketa, paprika, rajčata)",
+      "2 PL olivového oleje",
+      "čerstvé bylinky podle chuti (např. petržel, tymián)",
+      "sůl a pepř"
+    ],
+    "procedure": [
+      "Quinoa uvaříme podle návodu na obalu.",
+      "Zeleninu nakrájíme na menší kousky a promícháme s olivovým olejem, solí a pepřem.",
+      "Zeleninu pečeme v troubě při 200°C asi 20 minut, dokud není měkká.",
+      "Hotovou quinou podáváme s pečenou zeleninou a posypeme čerstvými bylinkami."
+    ]
+  }
