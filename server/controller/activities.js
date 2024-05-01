@@ -1,9 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const GetAbl = require("../abl/activities/getAbl");
+const activitiesDao = require("../dao/activities-dao.js");
 
-router.post("/get", (req, res) => {
-  GetAbl(req, res);
+router.get("/get", (req, res) => {
+  try {
+    const activities = activitiesDao.getAll(); // Nová funkce getAll pro získání všech aktivit
+    res.json(activities);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
 module.exports = router;

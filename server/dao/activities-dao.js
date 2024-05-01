@@ -3,35 +3,26 @@ const path = require("path");
 
 const activityFilePath = "storage/Activities";
 
-function getById(activityId) {
+// Nová funkce pro získání všech aktivit
+function getAll() {
   try {
     const filePath = path.join(__dirname, activityFilePath);
     const fileData = fs.readdirSync(filePath, "utf8");
-    let foundActivity = null;
+    const allActivities = [];
 
     fileData.forEach((groupFile) => {
       const pathToGroup = path.join(filePath, groupFile);
       const activityData = fs.readFileSync(pathToGroup, "utf-8");
       const activity = JSON.parse(activityData);
-      if (activity.id === activityId) {
-        foundActivity = activity;
-      }
+      allActivities.push(activity);
     });
 
-    if (!foundActivity) {
-      throw { code: "activityNotFound", message: "Activity not found." };
-    }
-
-    return foundActivity;
+    return allActivities;
   } catch (error) {
-    if (error.code === "ENOENT") {
-      throw { code: "fileNotFound", message: "File not found." };
-    } else {
-      throw { code: "failedToReadActivity", message: error.message };
-    }
+    throw { code: "failedToReadActivities", message: error.message };
   }
 }
 
 module.exports = {
-  getById,
+  getAll,
 };
