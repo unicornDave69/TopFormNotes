@@ -1,10 +1,8 @@
-{
+  {
     "id": 6,
-    "activityName": "Jogging",
-    "whatWeNeed": "Bežecké boty, pohodlné oblečení",
-    "describe": "Jogging je podobné běhání, ale obvykle se provádí v nižší intenzitě a s kratšími kroky. Může být vykonáváno venku nebo na běžeckém pásu. Je to skvělý způsob, jak spalovat kalorie a zlepšovat kardiovaskulární kondici.",
-    "burnedCalories": {
-      "low": 400,
-      "high": 600
-    }
+    "activityName": "Kolo spinning",
+    "icon": "🚵‍♀️",
+    "things": "Stacionární kolo, ručník, pití",
+    "describe": "Spinning je intenzivní cvičení na stacionárním kole, které se obvykle provádí ve skupinových lekcích. Instruktor vás bude vést přes různé úrovně intenzity a různé pozice, abyste spálili co nejvíce kalorií. Je to skvělá aktivita pro zlepšení kondice a spalování tuků",
+    "places": "https://www.fitplace.cz/novinky/90-cycling-lekce-na-ktere-si-budete-ujizdet"
   }

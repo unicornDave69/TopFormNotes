@@ -1,18 +1,31 @@
 {
-    "id": 2,
-    "receiptName": "Quinoa salát s pečenou dýní a feta sýrem",
-    "ingredients": [
-      "150 g quinoa",
-      "400 g dýně (na kostičky)",
-      "100 g feta sýra (na drobné kousky)",
-      "2 PL olivového oleje",
-      "1 PL balzamikového octa",
-      "čerstvá máta (na ozdobu)",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Quinoa uvaříme podle návodu na obalu.",
-      "Dýni marinujeme v olivovém oleji, balzamikovém octu, soli a pepři a pečeme v troubě při 200°C asi 20 minut, dokud není měkká.",
-      "Hotovou quinou smícháme s pečenou dýní a feta sýrem, ozdobíme čerstvou mátou."
-    ]
+  "id": 2,
+  "receiptName": "Králičí játra na slanině, cibuli a rajčatech",
+  "description": "Připravte si králičí játra na slanině, cibuli a rajčatech a vychutnejte si jejich bohatou a plnou chuť! Tento pokrm spojuje jemnost králičích jater s bohatou chutí slaniny, sladké cibule a šťavnatých rajčat.",
+  "ingredients": [
+    "1 x králičí játra",
+    "0,5 lžíce oleje",
+    "0,5 lžíce másla",
+    "0,5 velká cibule",
+    "25 g špeku",
+    "75 ml vývaru",
+    "1 velká rajčata",
+    "1 stroužek česneku",
+    "0,5 lžíce hladké mouky",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Na oleji s máslem zpěníme nakrájenou cibuli, slaninu a orestujeme dozlatova.",
+    "Přidáme játra, osolíme a opepříme. Z obou stran opečeme.",
+    "Játra vyjmeme a výpek zaprášíme moukou a opražíme za stálého míchání. Podlijeme vývarem, přidáme prolisovaný česnek a nakrájená rajčata.",
+    "Povaříme 20 minut, vrátíme zpět játra a prohřejeme."
+  ],
+  "nutritions": {
+    "energie": "2 952 kJ / 706 kcal",
+    "tuky": "62,96 g",
+    "sacharidy": "26,63 g",
+    "bílkoviny": "6,87 g",
+    "sůl": "2 g"
   }
+}

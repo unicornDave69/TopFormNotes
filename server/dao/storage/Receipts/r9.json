@@ -1,20 +1,32 @@
 {
-    "id": 9,
-    "receiptName": "Těstoviny s cuketou, cherry rajčaty a bazalkou",
-    "ingredients": [
-      "200 g těstovin",
-      "1 cuketa (na nudličky)",
-      "200 g cherry rajčat (půlená)",
-      "čerstvá bazalka (na ozdobu)",
-      "2 PL olivového oleje",
-      "1 stroužek česneku (na jemno nasekaný)",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Těstoviny uvaříme podle návodu na obalu.",
-      "Na pánvi rozehřejeme olivový olej a osmahneme na něm česnek.",
-      "Přidáme cuketu a smažíme do měkka.",
-      "Do směsi přidáme cherry rajčata a promícháme.",
-      "Hotové těstoviny smícháme s cuketou a rajčaty, dochutíme solí a pepřem a ozdobíme čerstvou bazalkou."
-    ]
+  "id": 9,
+  "receiptName": "Žloutková polévka s řapíkatým celerem",
+  "description": "Žloutková polévka s řapíkatým celerem je lahodný a výživný pokrm, který spojuje jemnost vajec se svěžestí celeru. Tato polévka je nejen snadná na přípravu, ale také plná vitamínů a minerálů.",
+  "ingredients": [
+    "2 nožičky párku",
+    "6 výhonků řapíkatého celeru",
+    "1 cibulka jarní",
+    "2 lžíce hladké mouky",
+    "5 žloutků",
+    "250 ml smetany 30%",
+    "1 lžíce sádla",
+    "1 lžíce másla",
+    "1 lžíce octa",
+    "1 litr vody",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Na sádle osmažíme nadrobno nakrájené párky a výhonky celeru. Zaprášíme mouku a 2 dcl vody podlijeme. Krátce vaříme a před přidáním smetany polévku odstavíme.",
+    "Po odstavení z plotny přidáme smetanu, promícháme a dolijeme vodou. Přidáme ocet a vaříme dále.",
+    "Rozmíchané žloutky s kořením a solí přidáme před dokončením a nakonec krátce povaříme s máslem. Potom vše rozmícháme tyčovým mixérem.",
+    "Na talíři zdobíme petrželkou a podáváme s opečeným pečivem."
+  ],
+  "nutritions": {
+    "energie": "4 870 kJ / 1 164 kcal",
+    "tuky": "98,58 g",
+    "sacharidy": "29,41 g",
+    "bílkoviny": "39,27 g",
+    "sůl": "2 g"
   }
+}

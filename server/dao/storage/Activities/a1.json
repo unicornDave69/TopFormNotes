@@ -1,10 +1,8 @@
 {
     "id": 1,
     "activityName": "Běhání",
-    "whatWeNeed": "Bežecké boty, pohodlné oblečení",
+    "icon": "🏃‍♂️",
+    "things": "Bežecké boty, pohodlné oblečení",
     "describe": "Běhání je nejčastěji vykonáváno venku v parcích, lesích nebo na běžeckých tratích. Pokud preferujete společnost, můžete se připojit k běžecké skupině nebo běhat s přáteli. Samozřejmě můžete běhat i sami a vychutnat si klidnou atmosféru přírody.",
-    "burnedCalories": {
-      "low": 400,
-      "high": 800
-    }
+    "places": "https://www.svetbehu.cz/spustili-jsme-mapu-bezeckych-tras-250-nejhezcich-mist-kam-jit-behat/"
   }

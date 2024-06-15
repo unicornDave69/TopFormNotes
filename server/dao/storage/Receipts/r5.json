@@ -1,18 +1,24 @@
 {
-    "id": 5,
-    "receiptName": "Losos na pečené brokolici s citronovým máslem",
-    "ingredients": [
-      "2 filety lososa",
-      "400 g brokolice (na růžičky)",
-      "1 citron (na plátky)",
-      "2 PL másla",
-      "čerstvé petrželové lístky (na ozdobu)",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Losos osolíme a opepříme a položíme na plech s pečícím papírem.",
-      "Brokolici marinujeme v olivovém oleji, soli a pepři a pečeme v troubě při 200°C asi 15 minut, dokud není měkká.",
-      "Na lososa položíme plátky citronu a kousek másla a pečeme v troubě při 180°C asi 15 minut.",
-      "Hotový losos podáváme s pečenou brokolicí a ozdobíme petrželovými lístky."
-    ]
+  "id": 5,
+  "receiptName": "Morušová marmeláda z domácí pekárny",
+  "description": "Maličká domácí pekárna může pomoci i při přípravě marmelády. Odpadá nám tím zdlouhavé míchání i hlídání, aby se marmeláda nepřipálila, pekárna všechnu práci zvládne za nás. My už pak jen hotovou marmeládu nalijeme do čistých skleniček a pevně zavíčkujeme.",
+  "ingredients": [
+    "1 kg zralých moruší",
+    "10 g citrusového pektinu",
+    "500 g cukru",
+    "2 lžíce citronové šťávy (popř. lžička kyseliny citronové)"
+  ],
+  "procedure": [
+    "Ovoce opláchneme a pomixujeme tyčovým mixérem, je to rychlé.",
+    "Směs vlijeme do formy pekárny, přidáme asi 3/4 připraveného cukru a pekárnu zapneme na program Džem.",
+    "Zbytek cukru promícháme s citrusovým pektinem a vsypeme do fory pekárny někdy v půlce programu - právě v době, kdy pekárna obsah promíchává, aby se pektin ihned rovnoměrně v marmeládě rozpustil. Zároveň přidáme i citronovou šťávu či kyselinu citronovou.",
+    "Po skončení programu formu vyjmeme a marmeládu plníme do připravených čistých skleniček."
+  ],
+  "nutritions": {
+    "energie": "11 878 kJ / 2 778 kcal",
+    "tuky": "2 g",
+    "sacharidy": "670 g",
+    "bílkoviny": "10 g",
+    "sůl": "0 g"
   }
+}

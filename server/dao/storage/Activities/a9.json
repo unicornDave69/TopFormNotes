@@ -1,10 +1,8 @@
-{
+  {
     "id": 9,
-    "activityName": "Kruhový trénink",
-    "whatWeNeed": "Posilovací vybavení, intervalový časovač",
-    "describe": "Kruhový trénink zahrnuje kombinaci cvičení s vlastní vahou těla a posilovacích cvičení s intervalovými cvičeními, které se střídají v krátkých časových intervalech. Tento tréninkový formát můžete provádět ve fitness centrech nebo doma s minimálním vybavením. Kruhový trénink je skvělý způsob, jak spálit kalorie, posílit svaly a zlepšit kondici.",
-    "burnedCalories": {
-      "low": 400,
-      "high": 700
-    }
+    "activityName": "Horská turistika",
+    "icon": "🧗",
+    "things": "Turistické boty, batoh s vodou a občerstvením",
+    "describe": "Horská turistika je skvělou aktivitou pro přírodní nadšence a dobrodruhy. Procházky v horách vás nejen fyzicky zatíží, ale také vám poskytnou úžasné výhledy a zážitky. Můžete si vybrat různé obtížné terény podle vašich schopností a preferencí. Horská turistika je skvělým způsobem, jak spalovat kalorie a zlepšovat celkovou kondici.",
+    "places": "https://travelking.cz/blog/objevte-to-nej-z-ceska-10-nejlepsich-turistickych-tras"
   }

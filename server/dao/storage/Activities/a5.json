@@ -1,10 +1,8 @@
-{
+  {
     "id": 5,
     "activityName": "Posilování",
-    "whatWeNeed": "Posilovací stroje, činky, posilovací podložka",
+    "icon": "🏋️",
+    "things": "Posilovací stroje, činky, posilovací podložka",
     "describe": "Posilování můžete provádět ve fitness centrech, doma nebo venku na posilovacích hřištích. Pokud jste začátečník, může být pro vás užitečné se poradit s osobním trenérem, který vám pomůže sestavit vhodný tréninkový plán a naučí vás správnou techniku.",
-    "burnedCalories": {
-      "low": 200,
-      "high": 400
-    }
+    "places": "https://www.kudyznudy.cz/aktivity/gold-s-gym-v-brne-nejlepsi-ze-vsech-680-posilove"
   }

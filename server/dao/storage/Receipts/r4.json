@@ -1,17 +1,30 @@
 {
-    "id": 4,
-    "receiptName": "Quinoa s čerstvými bylinkami a pečenou zeleninou",
-    "ingredients": [
-      "200 g quinoa",
-      "400 g smíšené zeleniny (např. cuketa, paprika, rajčata)",
-      "2 PL olivového oleje",
-      "čerstvé bylinky podle chuti (např. petržel, tymián)",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Quinoa uvaříme podle návodu na obalu.",
-      "Zeleninu nakrájíme na menší kousky a promícháme s olivovým olejem, solí a pepřem.",
-      "Zeleninu pečeme v troubě při 200°C asi 20 minut, dokud není měkká.",
-      "Hotovou quinou podáváme s pečenou zeleninou a posypeme čerstvými bylinkami."
-    ]
+  "id": 4,
+  "receiptName": "Pomazánka z tresčích jater se smetanovým sýrem",
+  "description": "Tresčí játra jsou vynikající pochoutkou, kterou si můžete vychutnat v různých úpravách. Pomazánka z tresčích jater se smetanovým sýrem je jednoduchý a chutný recept, který si zamilujete pro jeho jemnou a bohatou chuť.",
+  "ingredients": [
+    "125 g konzerva tresčích jater",
+    "50 g másla pokojové teploty",
+    "100 g smetanový sýr",
+    "1/2 malé cibule",
+    "limetková šťáva (dle chuti)",
+    "čerstvé pečivo",
+    "1 červená cibulka",
+    "1 vejce natvrdo",
+    "nať petržele",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Do misky dáme tresčí játra, změklé máslo, smetanový sýr (Buko) a jemně nasekanou cibulku. Maličko osolíme, opepříme a zakápneme limetkou.",
+    "Metličkou našleháme nebo utřeme do hladké konzistence. Necháme mírně ztuhnout v chladu a zatím nakrájíme pečivo. Poté vidličkou navrstvíme na pečivo (kolečka rohlíku nebo bagetky) a ozdobíme kouskem červené cibule, petrželky a vařeného vejce.",
+    "Podáváme jako chuťovky při posezení s rodinou nebo přáteli k vínu, pivu nebo čaji."
+  ],
+  "nutritions": {
+    "energie": "3 123 kJ / 746 kcal",
+    "tuky": "60,31 g",
+    "sacharidy": "5,92 g",
+    "bílkoviny": "44,52 g",
+    "sůl": "2 g"
   }
+}

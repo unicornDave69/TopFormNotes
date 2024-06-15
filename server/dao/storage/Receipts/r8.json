@@ -1,19 +1,25 @@
 {
-    "id": 8,
-    "receiptName": "Cizrna s cherry rajčaty a feta sýrem",
-    "ingredients": [
-      "200 g cizrny (vařené)",
-      "200 g cherry rajčat (půlená)",
-      "100 g feta sýra (na drobné kousky)",
-      "čerstvá bazalka (na ozdobu)",
-      "2 PL olivového oleje",
-      "1 PL balzamikového octa",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Cizrnu uvaříme podle návodu na obalu.",
-      "V misce smícháme cizrnu, cherry rajčata a feta sýr.",
-      "Přidáme olivový olej, balzamikový ocet, sůl a pepř a promícháme.",
-      "Salát ozdobíme čerstvou bazalkou."
-    ]
+  "id": 8,
+  "receiptName": "Brokolice zapečená na CRISP",
+  "description": "Tato zapečená brokolice se sýrem je nejen chutná, ale také plná vitamínů a minerálů. Pokrm v sobě spojuje křehkost čerstvé brokolice s bohatou chutí rozpuštěného sýra, vše zapečené do zlatavé a křupavé dokonalosti.",
+  "ingredients": [
+    "1 x střední brokolice",
+    "50 g tvrdého sýra",
+    "1 hrst strouhanky",
+    "30 g másla"
+  ],
+  "procedure": [
+    "Brokolici omyjeme a rozebereme na jednotlivé růžičky. Stonek odložíme, později ho oloupeme, nastrouháme a uvaříme z něj polévku.",
+    "Vodu v hrnci uvedeme do varu, mírně osolíme, vhodíme brokolici a vaříme asi 5 minut. Po uvaření ji necháme okapat.",
+    "Talíř CRISP vymažeme máslem a rozložíme na něj jednotlivé růžice. Rukou trochu přimáčkneme, aby se zploštily a zasypeme strouhaným sýrem.",
+    "Vložíme do mikrovlnky a zapneme program CRISP na 7 minut. Mezitím na másle opražíme strouhanku.",
+    "Na talíř urovnáme zapečenou brokolici a vedle, aby zbytečně nenavlhla, přidáme opečenou strouhanku."
+  ],
+  "nutritions": {
+    "energie": "2 306 kJ / 551 kcal",
+    "tuky": "33,60 g",
+    "sacharidy": "18,49 g",
+    "bílkoviny": "33,46 g",
+    "sůl": "1 g"
   }
+}

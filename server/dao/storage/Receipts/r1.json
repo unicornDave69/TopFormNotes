@@ -1,18 +1,26 @@
 {
-    "id": 1,
-    "receiptName": "Rýžové papriky s fazolkou a avokádem",
-    "ingredients": [
-      "4 velké papriky (červené nebo žluté)",
-      "200 g vařené rýže (ideálně hnědá)",
-      "200 g fazolí (černé nebo červené)",
-      "1 avokádo (na plátky)",
-      "čerstvá koriandr (na ozdobu)",
-      "sůl a pepř",
-      "šťáva z 1 limetky"
-    ],
-    "procedure": [
-      "Papriky rozpůlíme, vyjmeme semínka a dužinu.",
-      "Vařenou rýži smícháme s fazolemi a ochutíme solí, pepřem a limetkovou šťávou.",
-      "Směsí naplníme papriky a ozdobíme plátky avokáda a koriandrem."
-    ]
+  "id": 1,
+  "receiptName": "Letní rajčatový salátek",
+  "description": "Tento lehký a barevný salát je perfektní volbou pro horké dny, kdy toužíte po něčem svěžím a zdravém. Kombinace zralých, šťavnatých rajčat, aromatického koriandru a jemně pikantní zálivky vám zcela jistě zachutná.",
+  "ingredients": [
+    "2 rajčata",
+    "1 hrst koriandru",
+    "1/2 cibule",
+    "olivový olej",
+    "1 lžíce citrónové šťávy",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Rajčata omyjeme a nakrájíme na kostky. Cibuli oloupeme a nakrájíme nadrobno, stejně tak pokrájíme koriandr.",
+    "Zakápneme olejem, přidáme citronovou šťávu, osolíme, opepříme a promícháme.",
+    "Dáme vychladit a podáváme."
+  ],
+  "nutritions": {
+    "energie": "271 kJ / 65 kcal",
+    "tuky": "0,32 g",
+    "sacharidy": "12,45 g",
+    "bílkoviny": "1,57 g",
+    "sůl": "0 g"
   }
+}

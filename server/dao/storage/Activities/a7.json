@@ -1,10 +1,8 @@
-{
+  {
     "id": 7,
-    "activityName": "Kolo spinning",
-    "whatWeNeed": "Stacionární kolo, ručník, pití",
-    "describe": "Spinning je intenzivní cvičení na stacionárním kole, které se obvykle provádí ve skupinových lekcích. Instruktor vás bude vést přes různé úrovně intenzity a různé pozice, abyste spálili co nejvíce kalorií. Je to skvělá aktivita pro zlepšení kondice a spalování tuků.",
-    "burnedCalories": {
-      "low": 500,
-      "high": 700
-    }
+    "activityName": "Tanec",
+    "icon": "💃",
+    "things": "Pohodlné oblečení, dobrá hudba",
+    "describe": "Tanec je zábavná aktivita, která může zahrnovat různé styly, jako je hip-hop, salsa, balet nebo moderní tanec. Můžete tančit sami doma, navštěvovat taneční lekce nebo se připojit k taneční skupině. Tanec je skvělým způsobem, jak spálit kalorie, posílit svaly a zlepšit koordinaci.",
+    "places": "https://topdanceprague.cz/"
   }

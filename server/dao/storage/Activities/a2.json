@@ -1,10 +1,8 @@
-{
+  {
     "id": 2,
     "activityName": "Plavání",
-    "whatWeNeed": "Plavky, plavecké brýle, plavecká čepice",
+    "icon": "🏊‍♀️",
+    "things": "Plavky, plavecké brýle, plavecká čepice",
     "describe": "Plavání je nejlepší ve vodě, ať už se jedná o bazén, jezera nebo moře. Plavání můžete vykonávat sami pro relaxaci a soustředění se, nebo se připojit k plaveckému klubu, kde si můžete zlepšovat techniku a trénovat s ostatními plavci.",
-    "burnedCalories": {
-      "low": 500,
-      "high": 700
-    }
+    "places": "https://www.kudyznudy.cz/aktuality/70-tipu-na-nejlepsi-mista-ke-koupani-2018-aneb-tro"
   }

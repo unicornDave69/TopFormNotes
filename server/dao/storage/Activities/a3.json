@@ -1,10 +1,8 @@
-{
+  {
     "id": 3,
     "activityName": "Jízda na kole",
-    "whatWeNeed": "Kolo, cyklistická přilba, cyklistické oblečení",
+    "icon": "🚴",
+    "things": "Kolo, cyklistická přilba, cyklistické oblečení",
     "describe": "Jízda na kole je skvělou aktivitou pro venkovní prostředí, ať už jde o cyklistické stezky, horskou cyklistiku nebo jízdu po silnicích. Mnoho lidí si jízdu na kole užívá jako rodinnou aktivitu, ale můžete si ji užít i sami jako relaxaci nebo trénink.",
-    "burnedCalories": {
-      "low": 400,
-      "high": 600
-    }
+    "places": "https://www.kudyznudy.cz/aktuality/10-tipu-na-cyklo-vylety"
   }

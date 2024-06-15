@@ -3,7 +3,6 @@ const path = require("path");
 
 const activityFilePath = "storage/Activities";
 
-// Nová funkce pro získání všech aktivit
 function getAll() {
   try {
     const filePath = path.join(__dirname, activityFilePath);

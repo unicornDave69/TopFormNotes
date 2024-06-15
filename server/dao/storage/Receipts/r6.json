@@ -1,18 +1,30 @@
 {
-    "id": 6,
-    "receiptName": "Červená čočka s pečeným batátem a tahini omáčkou",
-    "ingredients": [
-      "200 g červené čočky",
-      "2 batáty (na kostičky)",
-      "2 PL olivového oleje",
-      "2 PL tahini pasty",
-      "čerstvá koriandr (na ozdobu)",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Červenou čočku uvaříme podle návodu na obalu.",
-      "Batáty marinujeme v olivovém oleji, soli a pepři a pečeme v troubě při 200°C asi 20 minut, dokud nejsou měkké.",
-      "Hotovou červenou čočku smícháme s pečenými batáty a dochutíme tahini omáčkou.",
-      "Podáváme ozdobené čerstvým koriandrem."
-    ]
+  "id": 6,
+  "receiptName": "Papriky plněné salátem s nakládanými tvarůžky",
+  "description": "Tento originální recept kombinuje svěžest paprik s pikantností tvarůžků, což vytváří neodolatelné spojení chutí. Plněné papriky jsou nejen chutným, ale i zdravým pokrmem, který je ideální jako předkrm nebo lehký hlavní chod. Připravte si tuto delikatesu na letní piknik nebo jako neobvyklé pohoštění pro hosty.",
+  "ingredients": [
+    "1 x králičí játra",
+    "0,5 lžíce oleje",
+    "0,5 lžíce másla",
+    "0,5 velká cibule",
+    "25 g špeku",
+    "75 ml vývaru",
+    "1 velká rajčata",
+    "1 stroužek česneku",
+    "0,5 lžíce hladké mouky",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Tvarůžky necháme na cedníku okapat. Přidáme k nim nadrobno nakrájenou cibuli, jarní cibulku, rajčata a vařená vejce. Podle potřeby přisolíme a opepříme.",
+    "Papriky rozkrojjíme, vydlabeme, osolíme a opepříme. Naplníme je salátem.",
+    "Bagetku nakrájíme, potřeme olivovým olejem a na grilu opečeme. Potřeme česnekem a podáváme."
+  ],
+  "nutritions": {
+    "energie": "1 190 kJ / 285 kcal",
+    "tuky": "15,53 g",
+    "sacharidy": "14,90 g",
+    "bílkoviny": "19,42 g",
+    "sůl": "0,5 g"
   }
+}

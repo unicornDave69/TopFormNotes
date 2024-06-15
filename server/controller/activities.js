@@ -4,7 +4,7 @@ const activitiesDao = require("../dao/activities-dao.js");
 
 router.get("/get", (req, res) => {
   try {
-    const activities = activitiesDao.getAll(); // Nová funkce getAll pro získání všech aktivit
+    const activities = activitiesDao.getAll();
     res.json(activities);
   } catch (error) {
     res.status(500).json({ message: error.message });

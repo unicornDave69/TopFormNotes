@@ -1,19 +1,30 @@
 {
-    "id": 7,
-    "receiptName": "Krevetové saláty s mango a avokádem",
-    "ingredients": [
-      "200 g krevet",
-      "1 mango (na kostičky)",
-      "1 avokádo (na kostičky)",
-      "čerstvá koriandr (na ozdobu)",
-      "2 PL olivového oleje",
-      "1 PL balzamikového octa",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Krevety osolíme a opepříme a osmažíme na pánvi na olivovém oleji dozlatova.",
-      "Mango a avokádo nakrájíme na menší kousky.",
-      "V misce smícháme krevety, mango a avokádo, přidáme balzamikový ocet a promícháme.",
-      "Salát podáváme ozdobený čerstvým koriandrem."
-    ]
+  "id": 7,
+  "receiptName": "Low carb ossobuco",
+  "description": "Objevte kouzlo tradiční italské kuchyně v odlehčené verzi s low carb ossobuco. Tento výjimečný pokrm z hovězí kližky je pečlivě připravený v bohaté zeleninové omáčce, která je nejen chutná, ale také nízkosacharidová.",
+  "ingredients": [
+    "250 g hovězí ossobuco",
+    "1 celer (část odložíme na pyré)",
+    "1 mrkev",
+    "100 g cibule",
+    "50 g rajčatového protlaku",
+    "česnek",
+    "víno",
+    "1 list bobkový",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Osmažíme očištěnou a pokrájenou zeleninu, přidáme maso, protlak a koření. Podlijeme vínem.",
+    "Maso dusíme 2 hodiny s kořenovou zeleninou.",
+    "Potom zeleninu propasírujeme do omáčky.",
+    "Podáváme s celerovým pyré, které jsme připravili z odložené části celeru."
+  ],
+  "nutritions": {
+    "energie": "1 023 kJ / 244 kcal",
+    "tuky": "2,06 g",
+    "sacharidy": "31,04 g",
+    "bílkoviny": "10,75 g",
+    "sůl": "1 g"
   }
+}

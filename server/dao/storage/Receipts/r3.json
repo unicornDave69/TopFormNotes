@@ -1,20 +1,34 @@
 {
-    "id": 3,
-    "receiptName": "Tofu míchaná zelenina na rýži",
-    "ingredients": [
-      "200 g tofu (na kostičky)",
-      "200 g smíšené zeleniny (např. paprika, cuketa, mrkev)",
-      "200 g vařené rýže (ideálně hnědá)",
-      "2 PL sójové omáčky",
-      "1 PL olivového oleje",
-      "1 stroužek česneku (na jemno nasekaný)",
-      "sůl a pepř"
-    ],
-    "procedure": [
-      "Tofu osušíme ubrouskem a nakrájíme na kostičky.",
-      "Zeleninu nakrájíme na menší kousky.",
-      "Na pánvi rozpálíme olej a osmahneme na něm tofu dozlatova.",
-      "Přidáme zeleninu a smažíme do měkka.",
-      "Přidáme vařenou rýži a sójovou omáčku, promícháme a dochutíme solí a pepřem."
-    ]
+  "id": 3,
+  "receiptName": "Treska po mlynářsku s třepanými bramborami",
+  "description": "Treska po mlynářsku je tradiční český pokrm, který vyniká svou jednoduchostí a zároveň lahodnou chutí. Treska, obalená v mouce a smažená dozlatova, je podávána s třepanými bramborami, které dodávají díky máslu a cibulce, jídlu jedinečný nádech",
+  "ingredients": [
+    "3 x kostky filé z tresky",
+    "2 lžíce hladké mouky",
+    "1/2 lžičky sušeného česneku",
+    "1/2 lžičky mleté papriky",
+    "1/2 lžičky kmínu",
+    "citronová šťáva",
+    "máslo na smažení",
+    "olej na smažení",
+    "brambory (dle počtu strávníku)",
+    "jarní cibulka - zelená část",
+    "olej na smažení",
+    "1 snítka libečku",
+    "sůl",
+    "pepř mletý"
+  ],
+  "procedure": [
+    "Filé necháme v lednici pomalu rozmrazit a osušíme. Pokapeme citronovou šťávou, osolíme a opepříme. Necháme 10-15 minut odležet.",
+    "Mouku smícháme s kořením a filé obalíme. Přebytečnou mouku oklepeme a smažíme na rozpáleném oleji s máslem z obou stran dozlatova.",
+    "Oloupané brambory uvaříme se solí a libečkem doměkka. Uvařené scedíme, přidáme máslo a nakrájenou cibulku.",
+    "Hrnec přiklopíme poklicí a brambory protřepeme tak, aby se všechny obalily máslem. Podáváme ihned s treskou a zeleninovým salátem."
+  ],
+  "nutritions": {
+    "energie": "365 kJ / 85 kcal",
+    "tuky": "0,75 g",
+    "sacharidy": "16,24 g",
+    "bílkoviny": "2,57 g",
+    "sůl": "1 g"
   }
+}

@@ -1,10 +1,8 @@
-{
+  {
     "id": 4,
-    "activityName": "Skákání švihadlem",
-    "whatWeNeed": "Švihadlo",
+    "activityName": "Skákání pře švihadlo",
+    "icon": "🐇",
+    "things": "Švihadlo",
     "describe": "Skákání švihadlem je skvělé cvičení, které můžete provádět doma, ve fitnes studiu nebo venku na hřišti. Je to skvělá aktivita pro zlepšení kondice a koordinace. Mnoho lidí preferuje skákání švihadlem v parku nebo ve fitness centrech, kde mají dostatek místa a podporu.",
-    "burnedCalories": {
-      "low": 600,
-      "high": 800
-    }
+    "places": "https://prazsky.denik.cz/ostatni_region/co-je-to-rope-skipping-uvidite-sami-20090129.html"
   }

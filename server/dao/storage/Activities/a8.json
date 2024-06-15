@@ -1,10 +1,8 @@
-{
+  {
     "id": 8,
-    "activityName": "Tanec",
-    "whatWeNeed": "Pohodlné oblečení, dobrá hudba",
-    "describe": "Tanec je zábavná aktivita, která může zahrnovat různé styly, jako je hip-hop, salsa, balet nebo moderní tanec. Můžete tančit sami doma, navštěvovat taneční lekce nebo se připojit k taneční skupině. Tanec je skvělým způsobem, jak spálit kalorie, posílit svaly a zlepšit koordinaci.",
-    "burnedCalories": {
-      "low": 300,
-      "high": 600
-    }
+    "activityName": "Kruhový trénink",
+    "icon": "🤸‍♀️",
+    "things": "Posilovací vybavení",
+    "describe": "Kruhový trénink zahrnuje kombinaci cvičení s vlastní vahou těla a posilovacích cvičení s intervalovými cvičeními, které se střídají v krátkých časových intervalech. Tento tréninkový formát můžete provádět ve fitness centrech nebo doma s minimálním vybavením. Kruhový trénink je skvělý způsob, jak spálit kalorie, posílit svaly a zlepšit kondici.",
+    "places": "https://freshkruhac.cz/"
   }
