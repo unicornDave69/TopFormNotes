@@ -1,82 +1,106 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Modal from "react-bootstrap/Modal";
+import Spinner from "react-bootstrap/Spinner";
 
-const HealthActivities = () => {
+function HealthActivities() {
   const [activities, setActivities] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [currentId, setCurrentId] = useState(1);
-  const [activityLoaded, setActivityLoaded] = useState(false);
+  const [selectedActivity, setSelectedActivity] = useState(null);
 
-  const fetchActivity = async (id) => {
+  const fetchActivities = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/activities/get", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id }),
-      });
+      const response = await fetch("http://localhost:5000/activities/get");
       if (!response.ok) {
         throw new Error("Failed to fetch activity data");
       }
       const data = await response.json();
+      setActivities(data);
       setLoading(false);
-      return data;
     } catch (error) {
-      console.error("Error fetching activity data: ", error);
-      setError(error.message);
+      console.error("Error fetching activity data: ", error.message);
+      setError("Failed to fetch activity data. Please try again later.");
       setLoading(false);
     }
   };
 
-  const handleButtonClick = useCallback(async (id) => {
-    try {
-      const nextId = id === 10 ? 1 : id === 0 ? 10 : id;
-      const activity = await fetchActivity(nextId);
-      if (activity) {
-        setCurrentId(nextId);
-        setActivities([activity]);
-        setActivityLoaded(true);
-      }
-    } catch (error) {
-      console.error("Error handling button click: ", error);
-      setError(error.message);
-    }
+  useEffect(() => {
+    fetchActivities();
   }, []);
 
-  useEffect(() => {
-    if (!activityLoaded) {
-      handleButtonClick(currentId);
-    }
-  }, [activityLoaded, currentId, handleButtonClick]);
+  const handleCardClick = (activity) => {
+    setSelectedActivity(activity);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedActivity(null);
+  };
 
   return (
     <div className="activity-container">
-      <h2>Choose an activity:</h2>
-      <div className="buttons-container">
-        <button onClick={() => handleButtonClick(currentId - 1)}>
-          Previous Activity
-        </button>
-        <button onClick={() => handleButtonClick(currentId + 1)}>
-          Next Activity
-        </button>
-      </div>
-      {loading && <div>Loading...</div>}
-      {error && <div>Error: {error}</div>}
-      {activities.map((activity, index) => (
-        <div className="activity" key={index}>
-          <h3>{activity.activityName}</h3>
-          <p>{activity.describe}</p>
-          <p>What you need: {activity.whatWeNeed}</p>
-          <p>
-            Burned calories: {activity.burnedCalories.low} -{" "}
-            {activity.burnedCalories.high} kcal
-          </p>
+      <h2 className="text-center">Zdravé pohybové aktivity:</h2>
+      {loading && (
+        <div className="text-center">
+          <Spinner animation="border" role="status" />
         </div>
-      ))}
+      )}
+      {error && <div className="text-center">Error: {error}</div>}
+      <div className="container">
+        <div className="row justify-content-center">
+          {activities.map((activity) => (
+            <div key={activity.id} className="col-md-6 col-lg-4 mb-3">
+              <Card>
+                <Card.Body>
+                  <Card.Title className="text-center">
+                    {activity.activityName}
+                  </Card.Title>
+                  <Card.Text
+                    className="text-center"
+                    style={{ fontSize: "3rem" }}
+                  >
+                    {activity.icon}
+                  </Card.Text>
+                  <div className="text-center">
+                    <Button
+                      variant="success"
+                      onClick={() => handleCardClick(activity)}
+                    >
+                      Detail
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Modal show={selectedActivity !== null} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            {selectedActivity && selectedActivity.activityName}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>{selectedActivity && selectedActivity.describe}</p>
+          <p>Potřebné věci: {selectedActivity && selectedActivity.things}</p>
+          <p>
+            Doporučený web pro více informací:{" "}
+            <a
+              href={selectedActivity && selectedActivity.places}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {selectedActivity && selectedActivity.places}
+            </a>
+          </p>
+        </Modal.Body>
+      </Modal>
     </div>
   );
-};
+}
 
 export default HealthActivities;

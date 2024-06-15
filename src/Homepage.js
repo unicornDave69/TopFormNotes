@@ -4,11 +4,13 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Spinner from "react-bootstrap/Spinner";
+import Container from "react-bootstrap/Container";
 
 function Homepage() {
   const [validated, setValidated] = useState(false);
   const [formData, setFormData] = useState({
-    dailyCalorieBudget: "",
+    dailyCalorieBudget: [],
     consumedCalories: [],
     burnedCalories: [],
   });
@@ -18,6 +20,8 @@ function Homepage() {
   const [totalCalorieBudget, setTotalCalorieBudget] = useState(0);
   const [totalConsumedCalories, setTotalConsumedCalories] = useState(0);
   const [totalBurnedCalories, setTotalBurnedCalories] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -35,6 +39,7 @@ function Homepage() {
     }
 
     setValidated(true);
+    setLoading(true);
 
     const totalCalorieBudget =
       Math.abs(parseInt(formData.dailyCalorieBudget, 10)) || 0;
@@ -57,6 +62,8 @@ function Homepage() {
     setTotalConsumedCalories(totalConsumedCalories);
     setTotalBurnedCalories(totalBurnedCalories);
 
+    setLoading(false);
+
     handleShowModal();
   };
 
@@ -66,15 +73,19 @@ function Homepage() {
 
   const handleCloseModal = () => {
     setShowModal(false);
+    setSuccessMessage("");
   };
 
   const handleRefreshPage = () => {
     window.location.reload();
   };
 
+  const now = new Date();
   const handleSaveToCalendar = async () => {
     const dataToSend = {
-      date: new Date().toISOString().split("T")[0],
+      date: `${now.toLocaleDateString("en-GB")} ${now.getHours()}:${(
+        "0" + now.getMinutes()
+      ).slice(-2)}`,
       setCalorieBudget: totalCalorieBudget,
       consumedCalories: totalConsumedCalories,
       burnedCalories: totalBurnedCalories,
@@ -82,6 +93,8 @@ function Homepage() {
     };
 
     try {
+      setLoading(true);
+
       const response = await fetch("http://localhost:5000/records/create", {
         method: "POST",
         headers: {
@@ -96,8 +109,11 @@ function Homepage() {
 
       const responseData = await response.json();
       console.log(responseData);
+      setSuccessMessage("Data byla úspěšně uložena do záznamů!");
     } catch (error) {
       console.error("Error while sending data to backend:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -106,7 +122,7 @@ function Homepage() {
       ...formData,
       consumedCalories: [
         ...formData.consumedCalories,
-        { name: "", calories: "" },
+        { name: "", calories: 0 },
       ],
     });
   };
@@ -114,7 +130,7 @@ function Homepage() {
   const handleAddActivity = () => {
     setFormData({
       ...formData,
-      burnedCalories: [...formData.burnedCalories, { name: "", calories: "" }],
+      burnedCalories: [...formData.burnedCalories, { name: "", calories: 0 }],
     });
   };
 
@@ -133,11 +149,19 @@ function Homepage() {
   };
 
   return (
-    <>
+    <Container>
+      <style type="text/css">
+        {`
+          .scrollable-modal-body {
+            max-height: 60vh;
+            overflow-y: auto;
+          }
+        `}
+      </style>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
-        <Row>
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
-            <Form.Label>Set daily calorie budget:</Form.Label>
+        <Row className="justify-content-center">
+          <Form.Group as={Col} md="6" controlId="validationCustom01">
+            <Form.Label>⚙️ Nastav si denní kalorický budget v Kj:</Form.Label>
             <Form.Control
               type="number"
               name="dailyCalorieBudget"
@@ -148,11 +172,10 @@ function Homepage() {
           </Form.Group>
         </Row>
         <br />
-        <br />
         {formData.consumedCalories.map((food, index) => (
-          <Row className="mb-3" key={index}>
-            <Form.Group as={Col} md="4">
-              <Form.Label>{`Food ${index + 1}`}</Form.Label>
+          <Row className="mb-3 justify-content-center" key={index}>
+            <Form.Group as={Col} md="3">
+              <Form.Label>{`Jídlo ${index + 1}`}</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -161,10 +184,8 @@ function Homepage() {
                 required
               />
             </Form.Group>
-            <Form.Group as={Col} md="4">
-              <Form.Label>{`Amount of calories for Food ${
-                index + 1
-              }`}</Form.Label>
+            <Form.Group as={Col} md="3">
+              <Form.Label>{`Nutriční hodnota Kj`}</Form.Label>
               <Form.Control
                 type="number"
                 name="calories"
@@ -175,15 +196,18 @@ function Homepage() {
             </Form.Group>
           </Row>
         ))}
-        <Button variant="outline-primary" onClick={handleAddFood}>
-          Add Food
-        </Button>
-        <br />
+        <div
+          style={{ display: "flex", justifyContent: "center", width: "100%" }}
+        >
+          <Button variant="outline-primary" onClick={handleAddFood}>
+            Přidat jídlo
+          </Button>
+        </div>
         <br />
         {formData.burnedCalories.map((activity, index) => (
-          <Row className="mb-3" key={index}>
-            <Form.Group as={Col} md="4">
-              <Form.Label>{`Activity ${index + 1}`}</Form.Label>
+          <Row className="mb-3 justify-content-center" key={index}>
+            <Form.Group as={Col} md="3">
+              <Form.Label>{`Aktivita ${index + 1}`}</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -192,10 +216,8 @@ function Homepage() {
                 required
               />
             </Form.Group>
-            <Form.Group as={Col} md="4">
-              <Form.Label>{`Amount of burned calories for Activity ${
-                index + 1
-              }`}</Form.Label>
+            <Form.Group as={Col} md="3">
+              <Form.Label>{`Spálené Kj`}</Form.Label>
               <Form.Control
                 type="number"
                 name="calories"
@@ -206,40 +228,70 @@ function Homepage() {
             </Form.Group>
           </Row>
         ))}
-        <Button variant="outline-primary" onClick={handleAddActivity}>
-          Add Activity
-        </Button>
+        <div
+          style={{ display: "flex", justifyContent: "center", width: "100%" }}
+        >
+          <Button variant="outline-primary" onClick={handleAddActivity}>
+            Přidat aktivitu
+          </Button>
+        </div>
         <br />
-        <br />
-        <Button type="submit" variant="primary">
-          Submit form
-        </Button>
+        <div
+          style={{ display: "flex", justifyContent: "center", width: "100%" }}
+        >
+          <Button type="submit" variant="primary">
+            Vyhodnotit výsledky
+          </Button>
+        </div>
       </Form>
 
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Consumed Calories</Modal.Title>
+          <Modal.Title>Snězené kalorie</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <h4>Total result: {totalResult}</h4>
-          <br />
-          <p>Set calorie budget: {totalCalorieBudget}</p>
-          <p>Consumed calories: {totalConsumedCalories}</p>
-          <p>Burned calories: {totalBurnedCalories}</p>
+        <Modal.Body className="scrollable-modal-body">
+          {loading ? (
+            <div className="text-center">
+              <Spinner animation="border" role="status" />
+            </div>
+          ) : (
+            <>
+              <div style={{ textAlign: "center" }}>
+                <h4>
+                  {totalResult >= 0 ? (
+                    <>Skvěle, dosáhl si {totalResult} Kj deficitu!🤩</>
+                  ) : (
+                    <>Ale né, dosáhl si {totalResult} Kj nadbytku.😤</>
+                  )}
+                </h4>
+              </div>
+              <br />
+              <div style={{ textAlign: "center" }}>
+                <p>Nastavený kalorický limit: {totalCalorieBudget} Kj</p>
+                <p>Snězené kalorie: {totalConsumedCalories} Kj</p>
+                <p>Spálené kalorie: {totalBurnedCalories} Kj</p>
+              </div>
+              {successMessage && (
+                <div style={{ textAlign: "center", color: "green" }}>
+                  <p>{successMessage}</p>
+                </div>
+              )}
+            </>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleRefreshPage}>
-            Refresh records
+            Obnovit záznamy
           </Button>
           <Button variant="secondary" onClick={handleCloseModal}>
-            Close window
+            Zavřít okno
           </Button>
           <Button variant="primary" onClick={handleSaveToCalendar}>
-            Save to calendar
+            Uložit do záznamů
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </Container>
   );
 }
 

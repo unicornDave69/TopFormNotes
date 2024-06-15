@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import Button from "react-bootstrap/Button"; // import Button z react-bootstrap
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Spinner from "react-bootstrap/Spinner";
 
 const Records = () => {
   const [records, setRecords] = useState([]);
@@ -70,37 +73,62 @@ const Records = () => {
 
   return (
     <div className="record-container">
-      <h2>All Records:</h2>
-      {loading && <div>Loading...</div>}
-      {error && <div>Error: {error}</div>}
-      <Card style={{ width: "18rem" }}>
-        <Card.Header>Featured</Card.Header>
-        <ListGroup variant="flush">
+      <h2 className="text-center">Tvé záznamy:</h2>
+      {loading && (
+        <div className="text-center">
+          <Spinner animation="border" role="status" />
+        </div>
+      )}
+      {error && <div className="text-center">Error: {error}</div>}
+      <Container>
+        <Row className="justify-content-center">
           {records.map((record) => (
-            <ListGroup.Item key={record.id}>
-              <div>Date: {record.date}</div>
-              <div>Set Calorie Budget: {record.setCalorieBudget}</div>
-              <div>Consumed Calories: {record.consumedCalories}</div>
-              <div>Burned Calories: {record.burnedCalories}</div>
-              <div>Result: {record.result}</div>
-              <Button variant="danger" onClick={() => handleShowModal(record)}>
-                Delete Record
-              </Button>
-            </ListGroup.Item>
+            <Col key={record.id} md={6} lg={4} className="mb-3">
+              <Card>
+                <Card.Body>
+                  <Card.Title>{record.date}</Card.Title>
+                  <Card.Text>
+                    ⚙️ Nastavený kalorický limit: {record.setCalorieBudget} Kj
+                  </Card.Text>
+                  <Card.Text>
+                    🍔 Snězené kalorie: {record.consumedCalories} Kj
+                  </Card.Text>
+                  <Card.Text>
+                    🏀 Spálené kalorie: {record.burnedCalories} Kj
+                  </Card.Text>
+                  <Card.Text
+                    style={{ textAlign: "center", fontSize: "1.10rem" }}
+                  >
+                    {" "}
+                    {record.result <= 0
+                      ? `🔴 ${record.result} Kj nadbytek 🔴`
+                      : `🟢 ${record.result} Kj deficit 🟢`}
+                  </Card.Text>
+                  <div className="text-center">
+                    <Button
+                      variant="danger"
+                      onClick={() => handleShowModal(record)}
+                    >
+                      Smazat záznam
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
-        </ListGroup>
-      </Card>
+        </Row>
+      </Container>
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Confirm Delete</Modal.Title>
+          <Modal.Title>Smazat záznam</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Are you sure you want to delete this record?</Modal.Body>
+        <Modal.Body>Jsi si jistý, že chceš záznam smazat?</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
-            Cancel
+            Zpět
           </Button>
           <Button variant="danger" onClick={handleDeleteRecord}>
-            Delete
+            Smazat
           </Button>
         </Modal.Footer>
       </Modal>

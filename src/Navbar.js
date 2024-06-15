@@ -7,20 +7,23 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 function Navbar() {
   return (
     <BootstrapNavbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <BootstrapNavbar.Brand href="/">TopFormNotes App</BootstrapNavbar.Brand>
+      <Container className="d-flex justify-content-center">
+        <BootstrapNavbar.Brand href="/">
+          T🍏pFormNotes App
+        </BootstrapNavbar.Brand>
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Others" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/records">Records</NavDropdown.Item>
+            <NavDropdown title="Další" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/records">
+                Tvé záznamy 🗂️
+              </NavDropdown.Item>
               <NavDropdown.Item href="/healthActivities">
-                Health Activities
+                Pohybové aktivity ⚽
               </NavDropdown.Item>
               <NavDropdown.Item href="/healthReceipts">
-                Health Receipts
+                Zdravé recepty 🥙
               </NavDropdown.Item>
-              <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
         </BootstrapNavbar.Collapse>

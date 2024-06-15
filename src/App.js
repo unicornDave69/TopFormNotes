@@ -5,6 +5,8 @@ import HealthActivities from "./HealthActivities";
 import HealthReceipts from "./HealthReceipts";
 import Records from "./Records";
 import Navbar from "./Navbar";
+import NotFound from "./NotFound";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/records" element={<Records />} />
         <Route path="/healthActivities" element={<HealthActivities />} />
         <Route path="/healthReceipts" element={<HealthReceipts />} />
+        <Route path="*" element={<NotFound />} />{" "}
       </Routes>
+      <Footer />
     </Router>
   );
 }
