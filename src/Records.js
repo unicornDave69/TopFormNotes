@@ -99,10 +99,9 @@ const Records = () => {
                   <Card.Text
                     style={{ textAlign: "center", fontSize: "1.10rem" }}
                   >
-                    {" "}
-                    {record.result <= 0
-                      ? `🔴 ${record.result} Kj nadbytek 🔴`
-                      : `🟢 ${record.result} Kj deficit 🟢`}
+                    {record.result >= 0
+                      ? `🟢 -${record.result} Kj deficit 🟢`
+                      : `🔴 ${Math.abs(record.result)} Kj nadbytek 🔴`}
                   </Card.Text>
                   <div className="text-center">
                     <Button
